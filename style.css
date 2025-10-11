@@ -7,11 +7,11 @@
 }
 
 :root {
-    --primary-color: #0077b6; /* Mavi - Temizliği ve güveni temsil eder (Alternatif) */
-    --accent-color: #FF7F50; /* PARLAK TURUNCU - Logodan alınan renk */
-    --text-color: #333;
+    --primary-color: #005f99; /* Daha koyu mavi */
+    --accent-color: #FF5722;  /* Daha sıcak turuncu */
+    --text-color: #222;
     --light-bg: #f5f5f5;
-    --dark-bg: #222;
+    --dark-bg: #111;
 }
 
 body {
@@ -21,9 +21,9 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 15px;
 }
 
 a {
@@ -40,8 +40,12 @@ ul {
     list-style: none;
 }
 
+/* Başlıklar */
 h2, h3, h4 {
     color: var(--accent-color);
+    font-weight: 800;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    letter-spacing: 0.5px;
     margin-bottom: 10px;
 }
 
@@ -62,7 +66,7 @@ h3 {
     color: #666;
 }
 
-/* --- Buton Stili --- */
+/* Buton */
 .btn-cta {
     display: inline-block;
     background-color: var(--accent-color);
@@ -73,14 +77,16 @@ h3 {
     letter-spacing: 1px;
     border: none;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 10px rgba(255, 87, 34, 0.3);
 }
 
 .btn-cta:hover {
     background-color: #e88d18;
+    transform: translateY(-2px);
 }
 
-/* --- Header & Navigasyon --- */
+/* Header */
 header {
     background-color: white;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -93,20 +99,19 @@ header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
+    padding: 3px 10px;
 }
 
-/* LOGO BOYUTU GÜNCELLEMESİ (Daha da büyütüldü) */
 .logo-img {
-    height: 120px; /* Eski 100px'ten daha büyük bir değer */
+    height: 120px;
     width: auto;
     display: block;
 }
 
 .nav-links {
     display: flex;
-    flex-grow: 1; /* Menüye esneklik kazandır */
-    justify-content: center; /* Menü linklerini ortala */
+    flex-grow: 1;
+    justify-content: center;
 }
 
 .nav-links li {
@@ -114,30 +119,50 @@ header .container {
 }
 
 .nav-links a {
-    color: var(--text-color);
-    font-weight: 500;
-    font-size: 1.1em;
+    color: var(--accent-color);
+    font-weight: 800;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    transition: color 0.3s, transform 0.2s;
 }
 
-/* SAĞ ÜST KÖŞE BUTONLARI STİLİ */
+.nav-links a:hover {
+    color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+/* Sosyal Butonlar */
 .social-buttons-nav {
     display: flex;
     align-items: center;
-    gap: 15px; /* İkonlar arasına boşluk ekle */
+    gap: 15px;
 }
 
-.social-buttons-nav a {
-    font-size: 1.2em; /* İkonları biraz küçült, menüden farklılaştırmak için */
-    color: var(--accent-color); /* Turuncu renk kullan */
-    margin: 0; /* Margin'i gap ile yönettik */
+.social-buttons-nav .phone-icon {
+    font-size: 2.2em;
+    color: black;
+    margin-right: 20px;
 }
+
+.social-buttons-nav a:not(.phone-icon) {
+    font-size: 1.8em;
+    margin: 0;
+}
+
+.social-buttons-nav a .fa-whatsapp { color: #25D366; }
+.social-buttons-nav a .fa-instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+.social-buttons-nav a .fa-facebook-f { color: #3b5998; }
 
 .social-buttons-nav a:hover {
-    color: var(--primary-color);
+    opacity: 0.7;
 }
 
-
-/* --- Hero Bölümü --- */
+/* Hero */
 .hero {
     height: 60vh;
     background-size: cover;
@@ -167,6 +192,7 @@ header .container {
 
 .hero-content h2 {
     color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     margin-bottom: 15px;
 }
 
@@ -175,10 +201,9 @@ header .container {
     margin-bottom: 30px;
 }
 
-/* --- A Propos Bölümü Stili --- */
-.apropos-section {
+/* A Propos */
+#apropos {
     padding: 60px 20px;
-    text-align: left;
     background-color: white;
 }
 
@@ -196,12 +221,11 @@ header .container {
 .apropos-content .signature {
     margin-top: 30px;
     padding-top: 15px;
-    border-top: 2px solid var(--accent-color); 
+    border-top: 2px solid var(--accent-color);
     font-style: italic;
 }
 
-
-/* --- Services Bölümü --- */
+/* Services */
 #services {
     padding: 60px 20px;
     background-color: var(--light-bg);
@@ -220,12 +244,12 @@ header .container {
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     text-align: center;
-    transition: transform 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .service-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 20px rgba(255, 87, 34, 0.3);
 }
 
 .service-item img {
@@ -247,32 +271,7 @@ header .container {
     border-top: 1px solid #ddd;
 }
 
-/* --- Galeri Bölümü --- */
-#galerie {
-    padding: 60px 20px;
-}
-
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
-    margin-top: 30px;
-}
-
-.gallery-item {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: opacity 0.3s;
-}
-
-.gallery-item:hover {
-    opacity: 0.85;
-}
-
-/* --- İletişim Bölümü --- */
+/* Contact */
 #contact {
     padding: 60px 20px;
     background-color: var(--primary-color);
@@ -347,7 +346,7 @@ header .container {
     border-radius: 8px;
 }
 
-/* --- Footer --- */
+/* Footer */
 footer {
     background-color: var(--dark-bg);
     color: #ccc;
@@ -359,54 +358,3 @@ footer .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.back-to-top {
-    font-size: 1.5em;
-    color: var(--accent-color);
-}
-
-.back-to-top:hover {
-    color: white;
-}
-
-/* --- Mobil Uyumlu Tasarım --- */
-@media (max-width: 768px) {
-    /* Mobil görünümde menüyü gizle */
-    .nav-links {
-        display: none;
-    }
-
-    header .container {
-        flex-direction: column;
-        gap: 10px;
-        /* Mobil görünümde logonun, sosyal butonların ve menünün dikey sıralanmasını sağlar */
-    }
-
-    /* Mobil Görünümde Logo Boyutunu Azalt (Görseli sıkıştırmamak için) */
-    .logo-img {
-        height: 80px;
-    }
-
-    /* Mobil'de sosyal butonlar alta insin, ortalansın */
-    .social-buttons-nav {
-        margin-top: 10px;
-    }
-
-    .hero {
-        height: 50vh;
-    }
-
-    .hero-content h2 {
-        font-size: 1.8em;
-    }
-
-    .contact-flex {
-        flex-direction: column;
-    }
-
-    footer .container {
-        flex-direction: column;
-        gap: 15px;
-    }
-}
