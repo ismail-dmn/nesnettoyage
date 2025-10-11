@@ -358,3 +358,70 @@ footer .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    /* Mobil Uyumlu Tasarım */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    header .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .logo-img {
+        height: 80px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .nav-links li {
+        margin: 5px 0;
+    }
+
+    .nav-links a {
+        font-size: 1em;
+    }
+
+    .social-buttons-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .hero {
+        height: auto;
+        padding: 40px 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content h2 {
+        font-size: 1.8em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-flex {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    footer .container {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
