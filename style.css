@@ -1,1 +1,159 @@
-<!DOCTYPE html> <html lang="fr"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>NES NETTOYAGE - Services de Nettoyage Professionnel en Alsace</title> <link rel="stylesheet" href="style.css"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> </head> <body> <header id="accueil"> <nav class="container"> <a href="#accueil" class="logo-link"> <img src="LOGO2.png" alt="NES NETTOYAGE - Nettoyage pour vous" class="logo-img"> </a> <ul class="nav-links"> <li><a href="#services">Services</a></li> <li><a href="#apropos">À Propos de Nous</a></li> <li><a href="#contact">Contact</a></li> </ul> <div class="social-buttons-nav"> <a href="tel:+33760434663" aria-label="Téléphone" class="phone-icon"><i class="fas fa-phone"></i></a> <a href="https://wa.me/33760434663" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a> <a href="https://instagram.com/nesnettoyage" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a> <a href="https://facebook.com/nesnettoyage" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a> </div> </nav> </header> <section class="hero" style="background-image: url('5.jpg');"> <div class="hero-content"> <h2>L'Excellence du Nettoyage Professionnel</h2> <p>Nettoyage résidentiel, commercial et industriel à Altkirch, Belfort, Huningue, Mulhouse et environs.</p> <a href="#contact" class="btn-cta">Demander un Devis Gratuit</a> </div> </section> <section id="apropos" class="container apropos-section"> <h3>À Propos de Nous</h3> <div class="apropos-content"> <p>Fort de plus de 10 ans d’expérience dans le secteur du nettoyage, nous poursuivons notre activité avec la même rigueur et le même dévouement au sein de notre nouvelle entreprise.</p> <p>Nous plaçons la satisfaction de nos clients au cœur de notre démarche, en réalisant chaque prestation avec confiance, soin et sens du détail. Grâce à nos produits de nettoyage de haute qualité et à notre équipe expérimentée, nous garantissons des normes d’hygiène élevées.</p> <p>Nous proposons des formules de travail avec ou sans contrat, afin d’offrir des solutions flexibles et adaptées à vos besoins.</p> <p>Pour plus d’informations ou pour une demande de service, n’hésitez pas à nous contacter.</p> <p class="signature">Nous sommes à votre service pour des espaces propres, frais et sains.<br>Cordialement,<br><strong>Duygu Kalyoncu – Directrice</strong></p> </div> </section> <section id="services" class="container"> <h3>Nos Services Spécialisés</h3> <p class="subtitle">Votre partenaire propreté pour un environnement sain et impeccable.</p> <div class="service-grid"> <div class="service-item"> <img src="7.jpg" alt="Nettoyage de Canapés et Tapis"> <h4>Nettoyage de Canapés & Fauteuils</h4> <p>Remise à neuf de tous types de tissus (canapés, fauteuils) avec des techniques professionnelles (injection/extraction).</p> </div> <div class="service-item"> <img src="9.jpg" alt="Nettoyage de Tapis Professionnel"> <h4>Nettoyage de Tapis</h4> <p>Nettoyage en profondeur, désinfection et ravivage des couleurs pour tous vos tapis et moquettes.</p> </div> <div class="service-item"> <img src="4.jpg" alt="Nettoyage de Fin de Chantier"> <h4>Nettoyage de Fin de Chantier</h4> <p>Élimination complète de la poussière et des débris après construction ou rénovation. (Aspirasyon industrielle, dépoussiérage).</p> </div> <div class="service-item"> <img src="3.jpg" alt="Nettoyage de Bureaux"> <h4>Nettoyage de Bureaux & Vitres</h4> <p>Entretien régulier de vos locaux professionnels, nettoyage des surfaces de travail et de la vitrerie pour un espace accueillant.</p> </div> <div class="service-item"> <img src="2.jpg" alt="Nettoyage de Terrasse"> <h4>Nettoyage de Terrasse & Extérieurs</h4> <p>Nettoyage haute pression et décapage de vos terrasses, allées et surfaces extérieures.</p> </div> <div class="service-item"> <img src="WhatsApp Görsel 2025-10-11 saat 22.52.19_d981f493.jpg" alt="Services de Nettoyage Spéciaux" class="special-service-img"> <h4>Services Spéciaux</h4> <p>Demandez votre devis personnalisé pour le nettoyage de conteneurs, d'immeubles ou de salles.</p> </div> </div> <div class="keywords"> <p>Zones desservies: **Altkirch** · **Belfort** · **Huningue** · **Mulhouse**.</p> <p>Autres services: Nettoyage de fin de chantier · Nettoyage de canapés · **Nettoyage de tapis** · Nettoyage de vitres · Nettoyage de bureaux · Services de conciergerie · Nettoyage d’immeubles · Nettoyage de salles · Nettoyage de terrasse · **Nettoyage surface**.</p> </div> </section> <section id="contact"> <div class="container"> <h3>Contactez-nous</h3> <div class="contact-flex"> <div class="contact-form"> <h4>Envoyez-nous un Message (Mail)</h4> <form action="VOTRE_MAIL_GÖNDERME_ADRESİNİZ.php" method="POST"> <input type="text" name="nom" placeholder="Votre Nom Complet" required> <input type="email" name="email" placeholder="Votre Adresse E-mail" required> <textarea name="message" placeholder="Votre Message ou Demande de Devis" rows="5" required></textarea> <button type="submit" class="btn-cta">Envoyer</button> </form> </div> <div class="contact-info"> <h4>Informations de Contact</h4> <p><i class="fas fa-phone"></i> Téléphone: +33 7 60 43 46 63</p> <p><i class="fas fa-envelope"></i> Email: info.nesnettoyage@gmail.com</p> <p><i class="fas fa-location-arrow"></i> Adresse: 37 a rue pricipale 68580 Hindlingen, France</p> <div class="social-buttons-contact"> <a href="https://instagram.com/nesnettoyage" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a> <a href="https://facebook.com/nesnettoyage" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a> <a href="https://wa.me/33760434663" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a> </div> </div> </div> <div class="google-map"> <h4>Notre Localisation (37 a rue pricipale 68580 Hindlingen)</h4> <iframe src="https://maps.google.com/maps?q=37%20a%20rue%20pricipale%2068580%20hindlingen&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe> </div> </div> </section> <footer> <div class="container"> <p>© 2025 NES NETTOYAGE. Tous droits réservés. | Mentions Légales</p> <a href="#accueil" class="back-to-top"><i class="fas fa-arrow-up"></i></a> </div> </footer> <script> document.querySelectorAll('a[href^="#"]').forEach(anchor => { anchor.addEventListener('click', function (e) { e.preventDefault(); document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' }); }); }); </script> </body> </html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NES NETTOYAGE - Services de Nettoyage Professionnel en Alsace</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header id="accueil">
+        <nav class="container">
+            <a href="#accueil" class="logo-link">
+                <img src="logo2.png" alt="NES NETTOYAGE - Nettoyage pour vous" class="logo-img">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#apropos">À Propos de Nous</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="social-buttons-nav">
+                <a href="tel:+33760434663" aria-label="Téléphone" class="phone-icon"><i class="fas fa-phone"></i></a>
+                <a href="https://wa.me/33760434663" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://instagram.com/nesnettoyage" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://facebook.com/nesnettoyage" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero" style="background-image: url('5.jpg');">
+        <div class="hero-content">
+            <h2>L'Excellence du Nettoyage Professionnel</h2>
+            <p>Nettoyage résidentiel, commercial et industriel à Altkirch, Belfort, Huningue, Mulhouse et environs.</p>
+            <a href="#contact" class="btn-cta">Demander un Devis Gratuit</a>
+        </div>
+    </section>
+    
+    <section id="apropos" class="container apropos-section">
+        <h3>À Propos de Nous</h3>
+        <div class="apropos-content">
+            <p>Fort de plus de 10 ans d’expérience dans le secteur du nettoyage, nous poursuivons notre activité avec la même rigueur et le même dévouement au sein de notre nouvelle entreprise.</p>
+
+            <p>Nous plaçons la satisfaction de nos clients au cœur de notre démarche, en réalisant chaque prestation avec confiance, soin et sens du détail. Grâce à nos produits de nettoyage de haute qualité et à notre équipe expérimentée, nous garantissons des normes d’hygiène élevées.</p>
+
+            <p>Nous proposons des formules de travail avec ou sans contrat, afin d’offrir des solutions flexibles et adaptées à vos besoins.</p>
+
+            <p>Pour plus d’informations ou pour une demande de service, n’hésitez pas à nous contacter.</p>
+
+            <p class="signature">Nous sommes à votre service pour des espaces propres, frais et sains.<br>Cordialement,<br><strong>Duygu Kalyoncu – Directrice</strong></p>
+        </div>
+    </section>
+
+    <section id="services" class="container">
+        <h3>Nos Services Spécialisés</h3>
+        <p class="subtitle">Votre partenaire propreté pour un environnement sain et impeccable.</p>
+        
+        <div class="service-grid">
+            
+            <div class="service-item">
+                <img src="7.jpg" alt="Nettoyage de Canapés et Tapis">
+                <h4>Nettoyage de Canapés & Fauteuils</h4>
+                <p>Remise à neuf de tous types de tissus (canapés, fauteuils) avec des techniques professionnelles (injection/extraction).</p>
+            </div>
+
+            <div class="service-item">
+                <img src="9.jpg" alt="Nettoyage de Tapis Professionnel">
+                <h4>Nettoyage de Tapis</h4>
+                <p>Nettoyage en profondeur, désinfection et ravivage des couleurs pour tous vos tapis et moquettes.</p>
+            </div>
+
+            <div class="service-item">
+                <img src="4.jpg" alt="Nettoyage de Fin de Chantier">
+                <h4>Nettoyage de Fin de Chantier</h4>
+                <p>Élimination complète de la poussière et des débris après construction ou rénovation. (Aspirasyon industrielle, dépoussiérage).</p>
+            </div>
+
+            <div class="service-item">
+                <img src="3.jpg" alt="Nettoyage de Bureaux">
+                <h4>Nettoyage de Bureaux & Vitres</h4>
+                <p>Entretien régulier de vos locaux professionnels, nettoyage des surfaces de travail et de la vitrerie pour un espace accueillant.</p>
+            </div>
+            
+            <div class="service-item">
+                <img src="2.jpg" alt="Nettoyage de Terrasse">
+                <h4>Nettoyage de Terrasse & Extérieurs</h4>
+                <p>Nettoyage haute pression et décapage de vos terrasses, allées et surfaces extérieures.</p>
+            </div>
+            
+            <div class="service-item">
+                <img src="WhatsApp Görsel 2025-10-11 saat 22.52.19_d981f493.jpg" alt="Services de Nettoyage Spéciaux" class="special-service-img">
+                <h4>Services Spéciaux</h4>
+                <p>Demandez votre devis personnalisé pour le nettoyage de conteneurs, d'immeubles ou de salles.</p>
+            </div>
+
+        </div>
+
+        <div class="keywords">
+            <p>Zones desservies: **Altkirch** · **Belfort** · **Huningue** · **Mulhouse**.</p>
+            <p>Autres services: Nettoyage de fin de chantier · Nettoyage de canapés · **Nettoyage de tapis** · Nettoyage de vitres · Nettoyage de bureaux · Services de conciergerie · Nettoyage d’immeubles · Nettoyage de salles · Nettoyage de terrasse · **Nettoyage surface**.</p>
+        </div>
+
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h3>Contactez-nous</h3>
+            <div class="contact-flex">
+                <div class="contact-form">
+                    <h4>Envoyez-nous un Message (Mail)</h4>
+                    <form action="VOTRE_MAIL_GÖNDERME_ADRESİNİZ.php" method="POST">
+                        <input type="text" name="nom" placeholder="Votre Nom Complet" required>
+                        <input type="email" name="email" placeholder="Votre Adresse E-mail" required>
+                        <textarea name="message" placeholder="Votre Message ou Demande de Devis" rows="5" required></textarea>
+                        <button type="submit" class="btn-cta">Envoyer</button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <h4>Informations de Contact</h4>
+                    <p><i class="fas fa-phone"></i> Téléphone: +33 7 60 43 46 63</p>
+                    <p><i class="fas fa-envelope"></i> Email: info.nesnettoyage@gmail.com</p>
+                    <p><i class="fas fa-location-arrow"></i> Adresse: 37 a rue pricipale 68580 Hindlingen, France</p>
+                    
+                    <div class="social-buttons-contact">
+                        <a href="https://instagram.com/nesnettoyage" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://facebook.com/nesnettoyage" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://wa.me/33760434663" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="google-map">
+                <h4>Notre Localisation (37 a rue pricipale 68580 Hindlingen)</h4>
+                <iframe src="https://maps.google.com/maps?q=37%20a%20rue%20pricipale%2068580%20hindlingen&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 NES NETTOYAGE. Tous droits réservés. | Mentions Légales</p>
+            <a href="#accueil" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
