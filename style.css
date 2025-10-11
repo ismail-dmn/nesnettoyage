@@ -1,159 +1,437 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NES NETTOYAGE - Services de Nettoyage Professionnel en Alsace</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
+/* Genel Ayarlar ve Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
 
-    <header id="accueil">
-        <nav class="container">
-            <a href="#accueil" class="logo-link">
-                <img src="logo2.png" alt="NES NETTOYAGE - Nettoyage pour vous" class="logo-img">
-            </a>
-            <ul class="nav-links">
-                <li><a href="#services">Services</a></li>
-                <li><a href="#apropos">À Propos de Nous</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="social-buttons-nav">
-                <a href="tel:+33760434663" aria-label="Téléphone" class="phone-icon"><i class="fas fa-phone"></i></a>
-                <a href="https://wa.me/33760434663" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                <a href="https://instagram.com/nesnettoyage" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://facebook.com/nesnettoyage" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-            </div>
-        </nav>
-    </header>
+:root {
+    --primary-color: #0077b6; /* Mavi - Temizliği ve güveni temsil eder */
+    --accent-color: #FF7F50; /* PARLAK TURUNCU - Ana Canlılık Rengi */
+    --text-color: #333;
+    --light-bg: #f5f5f5;
+    --dark-bg: #222;
+}
 
-    <section class="hero" style="background-image: url('5.jpg');">
-        <div class="hero-content">
-            <h2>L'Excellence du Nettoyage Professionnel</h2>
-            <p>Nettoyage résidentiel, commercial et industriel à Altkirch, Belfort, Huningue, Mulhouse et environs.</p>
-            <a href="#contact" class="btn-cta">Demander un Devis Gratuit</a>
-        </div>
-    </section>
-    
-    <section id="apropos" class="container apropos-section">
-        <h3>À Propos de Nous</h3>
-        <div class="apropos-content">
-            <p>Fort de plus de 10 ans d’expérience dans le secteur du nettoyage, nous poursuivons notre activité avec la même rigueur et le même dévouement au sein de notre nouvelle entreprise.</p>
+body {
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: white;
+}
 
-            <p>Nous plaçons la satisfaction de nos clients au cœur de notre démarche, en réalisant chaque prestation avec confiance, soin et sens du détail. Grâce à nos produits de nettoyage de haute qualité et à notre équipe expérimentée, nous garantissons des normes d’hygiène élevées.</p>
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
 
-            <p>Nous proposons des formules de travail avec ou sans contrat, afin d’offrir des solutions flexibles et adaptées à vos besoins.</p>
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: color 0.3s;
+}
 
-            <p>Pour plus d’informations ou pour une demande de service, n’hésitez pas à nous contacter.</p>
+a:hover {
+    color: var(--accent-color);
+}
 
-            <p class="signature">Nous sommes à votre service pour des espaces propres, frais et sains.<br>Cordialement,<br><strong>Duygu Kalyoncu – Directrice</strong></p>
-        </div>
-    </section>
+ul {
+    list-style: none;
+}
 
-    <section id="services" class="container">
-        <h3>Nos Services Spécialisés</h3>
-        <p class="subtitle">Votre partenaire propreté pour un environnement sain et impeccable.</p>
-        
-        <div class="service-grid">
-            
-            <div class="service-item">
-                <img src="7.jpg" alt="Nettoyage de Canapés et Tapis">
-                <h4>Nettoyage de Canapés & Fauteuils</h4>
-                <p>Remise à neuf de tous types de tissus (canapés, fauteuils) avec des techniques professionnelles (injection/extraction).</p>
-            </div>
+/* BAŞLIKLAR: Daha parlak renk ve belirginlik */
+h2, h3, h4 {
+    color: var(--accent-color); /* Parlak Turuncu */
+    font-weight: 700; /* Kalınlık artırıldı */
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Hafif gölge eklendi */
+    margin-bottom: 10px;
+}
 
-            <div class="service-item">
-                <img src="9.jpg" alt="Nettoyage de Tapis Professionnel">
-                <h4>Nettoyage de Tapis</h4>
-                <p>Nettoyage en profondeur, désinfection et ravivage des couleurs pour tous vos tapis et moquettes.</p>
-            </div>
+h2 {
+    font-size: 2.5em;
+    text-align: center;
+}
 
-            <div class="service-item">
-                <img src="4.jpg" alt="Nettoyage de Fin de Chantier">
-                <h4>Nettoyage de Fin de Chantier</h4>
-                <p>Élimination complète de la poussière et des débris après construction ou rénovation. (Aspirasyon industrielle, dépoussiérage).</p>
-            </div>
+h3 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
 
-            <div class="service-item">
-                <img src="3.jpg" alt="Nettoyage de Bureaux">
-                <h4>Nettoyage de Bureaux & Vitres</h4>
-                <p>Entretien régulier de vos locaux professionnels, nettoyage des surfaces de travail et de la vitrerie pour un espace accueillant.</p>
-            </div>
-            
-            <div class="service-item">
-                <img src="2.jpg" alt="Nettoyage de Terrasse">
-                <h4>Nettoyage de Terrasse & Extérieurs</h4>
-                <p>Nettoyage haute pression et décapage de vos terrasses, allées et surfaces extérieures.</p>
-            </div>
-            
-            <div class="service-item">
-                <img src="WhatsApp Görsel 2025-10-11 saat 22.52.19_d981f493.jpg" alt="Services de Nettoyage Spéciaux" class="special-service-img">
-                <h4>Services Spéciaux</h4>
-                <p>Demandez votre devis personnalisé pour le nettoyage de conteneurs, d'immeubles ou de salles.</p>
-            </div>
+.subtitle {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #666;
+}
 
-        </div>
+/* --- Buton Stili --- */
+.btn-cta {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
 
-        <div class="keywords">
-            <p>Zones desservies: **Altkirch** · **Belfort** · **Huningue** · **Mulhouse**.</p>
-            <p>Autres services: Nettoyage de fin de chantier · Nettoyage de canapés · **Nettoyage de tapis** · Nettoyage de vitres · Nettoyage de bureaux · Services de conciergerie · Nettoyage d’immeubles · Nettoyage de salles · Nettoyage de terrasse · **Nettoyage surface**.</p>
-        </div>
+.btn-cta:hover {
+    background-color: #e88d18;
+    transform: translateY(-2px);
+}
 
-    </section>
+/* --- Header & Navigasyon --- */
+header {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
 
-    <section id="contact">
-        <div class="container">
-            <h3>Contactez-nous</h3>
-            <div class="contact-flex">
-                <div class="contact-form">
-                    <h4>Envoyez-nous un Message (Mail)</h4>
-                    <form action="VOTRE_MAIL_GÖNDERME_ADRESİNİZ.php" method="POST">
-                        <input type="text" name="nom" placeholder="Votre Nom Complet" required>
-                        <input type="email" name="email" placeholder="Votre Adresse E-mail" required>
-                        <textarea name="message" placeholder="Votre Message ou Demande de Devis" rows="5" required></textarea>
-                        <button type="submit" class="btn-cta">Envoyer</button>
-                    </form>
-                </div>
-                
-                <div class="contact-info">
-                    <h4>Informations de Contact</h4>
-                    <p><i class="fas fa-phone"></i> Téléphone: +33 7 60 43 46 63</p>
-                    <p><i class="fas fa-envelope"></i> Email: info.nesnettoyage@gmail.com</p>
-                    <p><i class="fas fa-location-arrow"></i> Adresse: 37 a rue pricipale 68580 Hindlingen, France</p>
-                    
-                    <div class="social-buttons-contact">
-                        <a href="https://instagram.com/nesnettoyage" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="https://facebook.com/nesnettoyage" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://wa.me/33760434663" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-            </div>
+/* ÜST BOŞLUK MİNİMUMA İNDİRİLDİ */
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 20px; 
+}
 
-            <div class="google-map">
-                <h4>Notre Localisation (37 a rue pricipale 68580 Hindlingen)</h4>
-                <iframe src="https://maps.google.com/maps?q=37%20a%20rue%20pricipale%2068580%20hindlingen&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-        </div>
-    </section>
+.logo-img {
+    height: 180px; 
+    width: auto;
+    display: block;
+}
 
-    <footer>
-        <div class="container">
-            <p>© 2025 NES NETTOYAGE. Tous droits réservés. | Mentions Légales</p>
-            <a href="#accueil" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
-        </div>
-    </footer>
+.nav-links {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
 
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
-</body>
-</html>
+.nav-links li {
+    margin: 0 15px;
+}
+
+/* MENÜ LİNKLERİ: Daha parlak renk ve kalınlık */
+.nav-links a {
+    color: var(--accent-color); /* Parlak Turuncu */
+    font-weight: 700; /* Daha kalın */
+    font-size: 1.15em; /* Bir tık büyütüldü */
+    transition: color 0.3s, transform 0.2s;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color); /* Hover rengini mavi yapalım */
+    transform: translateY(-2px);
+}
+
+/* SAĞ ÜST KÖŞE BUTONLARI STİLİ */
+.social-buttons-nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Telefon ikonu için özel stil */
+.social-buttons-nav .phone-icon {
+    font-size: 2.2em; 
+    color: black; 
+    margin-right: 20px; 
+}
+
+.social-buttons-nav a:not(.phone-icon) {
+    font-size: 1.8em;
+    margin: 0;
+}
+
+/* İkonların orijinal renkleri */
+.social-buttons-nav a .fa-whatsapp { color: #25D366; }
+.social-buttons-nav a .fa-instagram { 
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+.social-buttons-nav a .fa-facebook-f { color: #3b5998; }
+
+
+.social-buttons-nav a:hover {
+    opacity: 0.7; /* Hover durumunda parlaklık azalsın */
+}
+
+
+/* --- Hero Bölümü --- */
+.hero {
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    z-index: 10;
+    padding: 20px;
+}
+
+.hero-content h2 {
+    color: white; /* Hero başlığı beyaz kalmalı */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Gölgeler artırıldı */
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* --- A Propos Bölümü Stili --- */
+#apropos {
+    padding: 60px 20px;
+    background-color: white;
+}
+
+.apropos-content {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.apropos-content p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+.apropos-content .signature {
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 2px solid var(--accent-color); 
+    font-style: italic;
+}
+
+
+/* --- Services Bölümü --- */
+#services {
+    padding: 60px 20px;
+    background-color: var(--light-bg);
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.service-item {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(255, 127, 80, 0.3); /* Turuncu gölge ile canlılık katıldı */
+}
+
+.service-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.service-item .special-service-img {
+    height: 200px; 
+    object-fit: cover;
+}
+
+.service-item h4 {
+    color: var(--accent-color);
+    font-size: 1.3em;
+}
+
+.keywords {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+}
+
+
+/* --- İletişim Bölümü --- */
+#contact {
+    padding: 60px 20px;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+#contact h3 {
+    color: white;
+}
+
+.contact-flex {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.contact-form, .contact-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: var(--accent-color);
+}
+
+.contact-form h4, .contact-info h4 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: var(--accent-color);
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: var(--text-color);
+}
+
+.social-buttons-contact a {
+    font-size: 2em;
+    margin-right: 20px;
+    color: white;
+    transition: color 0.3s;
+}
+
+.social-buttons-contact a:hover {
+    color: var(--accent-color);
+}
+
+.google-map {
+    margin-top: 40px;
+}
+
+.google-map h4 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.google-map iframe {
+    border-radius: 8px;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: var(--dark-bg);
+    color: #ccc;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back-to-top {
+    font-size: 1.5em;
+    color: var(--accent-color);
+    transition: color 0.3s;
+}
+
+.back-to-top:hover {
+    color: white;
+}
+
+/* --- Mobil Uyumlu Tasarım --- */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    /* MOBİLDEKİ ÜST BOŞLUK AYARI */
+    header .container {
+        flex-direction: column;
+        gap: 10px;
+        padding: 5px 20px; /* Mobil cihazlarda içeriğin sıkışmaması için 5px tutuldu. */
+    }
+
+    .logo-link {
+        margin-bottom: 10px;
+    }
+
+    .logo-img {
+        height: 120px; 
+    }
+    
+    .nav-links a {
+        font-size: 1.1em;
+    }
+
+    .social-buttons-nav {
+        margin-top: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .social-buttons-nav a {
+        font-size: 1.5em;
+    }
+    .social-buttons-nav .phone-icon {
+        font-size: 1.8em; 
+        margin-right: 15px;
+    }
+
+    .hero {
+        height: 50vh;
+    }
+
+    .hero-content h2 {
+        font-size: 1.8em;
+    }
+
+    .contact-flex {
+        flex-direction: column;
+    }
+
+    footer .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
