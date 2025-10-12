@@ -446,3 +446,16 @@ footer .container {
     cursor: pointer;
   }
 }
+
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    padding: 40px 20px;
+  }
+}
+@media (max-width: 768px) {
+  footer .container {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
