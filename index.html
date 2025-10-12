@@ -131,12 +131,19 @@
             <div class="contact-flex">
                 <div class="contact-form">
                     <h4>Envoyez-nous un Message (Mail)</h4>
-                    <form action="VOTRE_MAIL_GÖNDERME_ADRESİNİZ.php" method="POST">
-                        <input type="text" name="nom" placeholder="Votre Nom Complet" required>
-                        <input type="email" name="email" placeholder="Votre Adresse E-mail" required>
-                        <textarea name="message" placeholder="Votre Message ou Demande de Devis" rows="5" required></textarea>
-                        <button type="submit" class="btn-cta">Envoyer</button>
-                    </form>
+                    <form action="https://formsubmit.co/info.nesnettoyage@gmail.com" method="POST">
+  <input type="text" name="nom" placeholder="Votre Nom Complet" required>
+  <input type="email" name="email" placeholder="Votre Adresse E-mail" required>
+  <textarea name="message" placeholder="Votre Message ou Demande de Devis" rows="5" required></textarea>
+
+  <!-- Gizli ayarlar -->
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_next" value="https://nesnettoyage.com/merci.html">
+
+  <button type="submit" class="btn-cta">Envoyer</button>
+</form>
+
                 </div>
                 
                 <div class="contact-info">
@@ -187,6 +194,7 @@
 </script>
 </body>
 </html>
+
 
 
 
